@@ -18,17 +18,14 @@
 $(call inherit-product, device/xiaomi/certus/device.mk)
 
 # Inherit some common Cipher stuff.
-$(call inherit-product, vendor/cipher/config/common_full_phone.mk)
-
-TARGET_FACE_UNLOCK_SUPPORTED := true
-CIPHER_MAINTAINER := sayann70
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Boot animaton
 TARGET_BOOT_ANIMATION_RES := 720
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := certus
-PRODUCT_NAME := cipher_certus
+PRODUCT_NAME := lineage_certus
 PRODUCT_BRAND := xiaomi
 PRODUCT_MODEL := Redmi 6 / Redmi 6A
 PRODUCT_MANUFACTURER := Xiaomi
