@@ -10,6 +10,8 @@ PRODUCT_PRODUCT_PROPERTIES  += \
 # Graphics
 PRODUCT_PRODUCT_PROPERTIES  += \
     debug.sf.enable_gl_backpressure=1
+    ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
+    debug.cpurend.vsync=false
 
 # IMS
 PRODUCT_PRODUCT_PROPERTIES  += \
@@ -29,7 +31,14 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.sys.fw.bservice_limit=5 \
     ro.sys.fw.bservice_age=5000 \
     ro.am.reschedule_service=true \
-    ro.sys.fw.bg_apps_limit=24 
+    ro.sys.fw.bg_apps_limit=24
+    ro.config.dha_cached_max=16 
+    ro.config.dha_empty_max=42 
+    ro.config.dha_empty_init=32 
+    ro.config.dha_lmk_scale=0.545 
+    ro.config.dha_th_rate=2.3 
+    ro.config.sdha_apps_bg_max=64 
+    ro.config.sdha_apps_bg_min=8
 
 # OMX
 PRODUCT_PRODUCT_PROPERTIES  += \
@@ -52,5 +61,17 @@ PRODUCT_PRODUCT_PROPERTIES  += \
 
 # Display
 PRODUCT_PRODUCT_PROPERTIES  += \
-   ro.sf.lcd_density=320
+   ro.sf.lcd_density=295
 
+# blurs
+ PRODUCT_PRODUCT_PROPERTIES  += \
+   persist.sys.sf.disable_blurs=1
+   
+ # Fling velocities
+ PRODUCT_PRODUCT_PROPERTIES  += \
+   ro.min.fling_velocity=160
+   ro.max.fling_velocity=20000
+
+# Iorap
+  iorapd.perfetto.enable=true
+  iorapd.readahead.enable=true
