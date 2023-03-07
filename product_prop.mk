@@ -78,22 +78,14 @@ PRODUCT_PRODUCT_PROPERTIES  += \
 
 # Dex
 dalvik.vm.dex2oat64.enabled=true 
-ro.sys.fw.dex2oat_thread_count=4 
-dalvik.vm.boot-dex2oat-threads=4
-dalvik.vm.dex2oat-cpu-set=0,1,2,3
+ro.sys.fw.dex2oat_thread_count=8 
+dalvik.vm.boot-dex2oat-threads=8 
+dalvik.vm.dex2oat-cpu-set=0,1,2,3,4,5,6,7 
 dalvik.vm.dex2oat-filter=quicken 
-dalvik.vm.dex2oat-threads=4
-dalvik.vm.image-dex2oat-cpu-set=0,1,2,3
+dalvik.vm.dex2oat-threads=8 
+dalvik.vm.image-dex2oat-cpu-set=0,1,2,3,4,5,6,7 
 dalvik.vm.image-dex2oat-filter=quicken 
-dalvik.vm.image-dex2oat-threads=4
-
-# Dalvik Heap
-dalvik.vm.heapstartsize=8m 
-dalvik.vm.heapgrowthlimit=256m
-dalvik.vm.heapsize=512m 
-dalvik.vm.heaptargetutilization=0.75 
-dalvik.vm.heapminfree=2m 
-dalvik.vm.heapmaxfree=8m
+dalvik.vm.image-dex2oat-threads=8
 
 # LMKD
 ro.lmk.low=1001 
