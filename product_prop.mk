@@ -61,7 +61,7 @@ PRODUCT_PRODUCT_PROPERTIES  += \
 
 # Display
 PRODUCT_PRODUCT_PROPERTIES  += \
-   ro.sf.lcd_density=295
+   ro.sf.lcd_density=320
 
 # blurs
  PRODUCT_PRODUCT_PROPERTIES  += \
@@ -104,3 +104,6 @@ ro.lmk.psi_complete_stall_ms=200
 ro.lmk.thrashing_limit=30 
 ro.lmk.swap_util_max=100
 ro.config.low_ram2g=true
+
+# Perf
+ro.vendor.perf.scroll_opt=true
