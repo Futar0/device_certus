@@ -67,7 +67,7 @@ PRODUCT_PRODUCT_PROPERTIES  += \
  PRODUCT_PRODUCT_PROPERTIES  += \
    persist.sys.sf.disable_blurs=1
    
- # Fling velocities
+# Fling velocities
  PRODUCT_PRODUCT_PROPERTIES  += \
    ro.min.fling_velocity=160
    ro.max.fling_velocity=20000
@@ -75,3 +75,35 @@ PRODUCT_PRODUCT_PROPERTIES  += \
 # Iorap
   iorapd.perfetto.enable=true
   iorapd.readahead.enable=true
+
+# Dex
+dalvik.vm.dex2oat64.enabled=true 
+ro.sys.fw.dex2oat_thread_count=8 
+dalvik.vm.boot-dex2oat-threads=8 
+dalvik.vm.dex2oat-cpu-set=0,1,2,3,4,5,6,7 
+dalvik.vm.dex2oat-filter=quicken 
+dalvik.vm.dex2oat-threads=8 
+dalvik.vm.image-dex2oat-cpu-set=0,1,2,3,4,5,6,7 
+dalvik.vm.image-dex2oat-filter=quicken 
+dalvik.vm.image-dex2oat-threads=8
+
+# LMKD
+ro.lmk.low=1001 
+ro.lmk.medium=800
+ro.lmk.critical=0  
+ro.lmk.critical_upgrade=false 
+ro.lmk.upgrade_pressure=100 
+ro.lmk.downgrade_pressure=100 
+ro.lmk.kill_heaviest_task=true 
+ro.lmk.kill_timeout_ms=15 
+ro.lmk.use_minfree_levels=true 
+ro.lmk.enhance_batch_kill=true 
+ro.lmk.vmpressure_file_min=80640 
+ro.lmk.use_psi=true 
+ro.lmk.psi_complete_stall_ms=200 
+ro.lmk.thrashing_limit=30 
+ro.lmk.swap_util_max=100
+ro.config.low_ram2g=true
+
+# Perf
+ro.vendor.perf.scroll_opt=true
