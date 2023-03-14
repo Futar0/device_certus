@@ -67,11 +67,6 @@ PRODUCT_PRODUCT_PROPERTIES  += \
  PRODUCT_PRODUCT_PROPERTIES  += \
    persist.sys.sf.disable_blurs=1
    
- # Fling velocities
- PRODUCT_PRODUCT_PROPERTIES  += \
-   ro.min.fling_velocity=160
-   ro.max.fling_velocity=20000
-
 # Iorap
   iorapd.perfetto.enable=true
   iorapd.readahead.enable=true
