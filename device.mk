@@ -149,4 +149,4 @@ PRODUCT_PACKAGES += \
 
 # Call proprietary blob setup
 $(call inherit-product-if-exists, vendor/xiaomi/mt6765-common/mt6765-common-vendor.mk)
-$(call inherit-product, vendor/mediatek-ims/ims-vendor.mk)
+#$(call inherit-product, vendor/mediatek-ims/ims-vendor.mk)
